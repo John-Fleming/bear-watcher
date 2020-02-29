@@ -5,9 +5,17 @@ const addBear = (e) => {
     e.preventDefault();
     const bearName = $('#bear-name').val();
     const bearImage = $('#bear-image').val();
-    bearsData.setBears({name: bearName, imageUrl: bearImage});
+    const allBears = bearsData.getBears();
+    bearsData.setBears({
+        name: bearName, 
+        imageUrl: bearImage, 
+        bearId: `bear${allBears.length +1}`, 
+        fishAttempts: 0, 
+        fishesCaught: 0}
+        );
     river.printAllBears();
     $('#new-bear-form').trigger("reset");
+    // console.log(allBears);
 };
 
 const submitBearEvent = () => {

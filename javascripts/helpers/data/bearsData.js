@@ -8,4 +8,9 @@ const getBears = () => {
     return bears;
 };
 
-export default { getBears, setBears };
+const updateFishAttempts = (bearId) => {
+    const selectedBear = bears.findIndex((x) => x.bearId === bearId);
+    bears[selectedBear].fishAttempts += 1;
+}
+
+export default { getBears, setBears, updateFishAttempts };
