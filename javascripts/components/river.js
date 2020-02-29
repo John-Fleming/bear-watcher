@@ -5,7 +5,7 @@ const printAllBears = () => {
     const allBears = bearsData.getBears();
     let domString = '';
     allBears.forEach((bears) => {
-        domString += '<div class="card m-2" style="width: 18rem;">';
+        domString += '<div class="card text-center m-2">';
         domString +=   `<img src="${bears.imageUrl}" class="card-img-top" alt="a picture of ${bears.name} the bear">`;
         domString +=   '<div class="card-body">';
         domString +=     `<h5 class="card-title">${bears.name}</h5>`;
