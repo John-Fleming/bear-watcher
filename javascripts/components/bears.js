@@ -15,7 +15,6 @@ const addBear = (e) => {
         );
     river.printAllBears();
     $('#new-bear-form').trigger("reset");
-    // console.log(allBears);
 };
 
 const submitBearEvent = () => {
