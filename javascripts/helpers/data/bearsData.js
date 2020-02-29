@@ -11,6 +11,11 @@ const getBears = () => {
 const updateFishAttempts = (bearId) => {
     const selectedBear = bears.findIndex((x) => x.bearId === bearId);
     bears[selectedBear].fishAttempts += 1;
-}
+};
 
-export default { getBears, setBears, updateFishAttempts };
+const updateFishesCaught = (bearId) => {
+    const selectedBear = bears.findIndex((x) => x.bearId === bearId);
+    bears[selectedBear].fishesCaught += 1;
+};
+
+export default { getBears, setBears, updateFishAttempts, updateFishesCaught };
