@@ -1,7 +1,12 @@
 const bears = [];
+const fishAttemptLogs = [];
 
 const setBears = (newBearObject) => {
     bears.push(newBearObject);
+};
+
+const updateFishAttemptLogs = (newAttemptOject) => {
+    bears.fishAttemptTimestamp.push(newAttemptOject); // SEE IF THIS WIL WORK WITH THE DOUBLE DOT NOTATION
 };
 
 const getBears = () => {
@@ -18,4 +23,4 @@ const updateFishesCaught = (bearId) => {
     bears[selectedBear].fishesCaught += 1;
 };
 
-export default { getBears, setBears, updateFishAttempts, updateFishesCaught };
+export default { getBears, setBears, updateFishAttempts, updateFishesCaught, updateFishAttemptLogs };

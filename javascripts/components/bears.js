@@ -11,7 +11,8 @@ const addBear = (e) => {
         imageUrl: bearImage, 
         bearId: `bear${allBears.length +1}`, 
         fishAttempts: 0, 
-        fishesCaught: 0}
+        fishesCaught: 0,
+        fishAttemptsLog: []}
         );
     river.printAllBears();
     $('#new-bear-form').trigger("reset");
