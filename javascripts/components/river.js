@@ -9,9 +9,10 @@ const printAllBears = () => {
         domString +=   `<img src="${bears.imageUrl}" class="card-img-top" alt="a picture of ${bears.name} the bear">`;
         domString +=   '<div class="card-body">';
         domString +=     `<h5 class="card-title">${bears.name}</h5>`;
-        domString +=     '<button class="fish-attempt btn btn-dark mx-1"><i class="fas fa-question"></i></button>';
-        domString +=     '<button class="fish-caught btn btn-dark mx-1"><i class="fas fa-fish"></i></button>';
+        domString +=     '<button id="attempt-btn" class="fish-attempt btn btn-dark mx-1"><i class="fas fa-question"></i></button>';
+        domString +=     '<button id="successful-catch-btn" class="fish-caught btn btn-dark mx-1"><i class="fas fa-fish"></i></button>';
         domString +=     `<p class="fish-count text-success mt-2">Fishes Caught: ${bears.fishesCaught}</p>`;
+        domString +=     `<p class="fish-log mt-2">Fishing Log: Last Attempt: ${bears.fishAttemptsLog.attemptTimestamp} Fish Caught? ${bears.fishAttemptsLog.successfulCatch}</p>`;
         domString +=   '</div>';
         domString += '</div>';
     })

@@ -5,8 +5,8 @@ const setBears = (newBearObject) => {
     bears.push(newBearObject);
 };
 
-const updateFishAttemptLogs = (newAttemptOject) => {
-    bears.fishAttemptTimestamp.push(newAttemptOject); // SEE IF THIS WIL WORK WITH THE DOUBLE DOT NOTATION
+const updateFishAttemptLogs = (bearId, newAttemptOject) => {
+    bears[bearId].fishAttemptsLog.push(newAttemptOject); // SEE IF THIS WIL WORK WITH THE DOUBLE DOT NOTATION
 };
 
 const getBears = () => {
