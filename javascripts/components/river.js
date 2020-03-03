@@ -12,7 +12,7 @@ const printAllBears = () => {
         domString +=     '<button id="attempt-btn" class="fish-attempt btn btn-dark mx-1"><i class="fas fa-question"></i></button>';
         domString +=     '<button id="successful-catch-btn" class="fish-caught btn btn-dark mx-1"><i class="fas fa-fish"></i></button>';
         domString +=     `<p class="fish-count text-success mt-2">Fishes Caught: ${bears.fishesCaught}</p>`;
-        domString +=     `<p class="fish-log mt-2">Fishing Log: Last Attempt: ${bears.fishAttemptsLog.attemptTimestamp} Fish Caught? ${bears.fishAttemptsLog.successfulCatch}</p>`;
+        domString +=     `<p class="fish-log mt-2">Fishing Log: ${bears.fishAttemptsLog}</p>`;
         domString +=   '</div>';
         domString += '</div>';
     })

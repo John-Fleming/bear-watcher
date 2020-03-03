@@ -1,12 +1,12 @@
 const bears = [];
-const fishAttemptLogs = [];
 
 const setBears = (newBearObject) => {
     bears.push(newBearObject);
 };
 
 const updateFishAttemptLogs = (bearId, newAttemptOject) => {
-    bears[bearId].fishAttemptsLog.push(newAttemptOject); // SEE IF THIS WIL WORK WITH THE DOUBLE DOT NOTATION
+    const selectedBear = bears.findIndex((x) => x.bearId === bearId);
+    bears[selectedBear].fishAttemptsLog.push(newAttemptOject); 
 };
 
 const getBears = () => {
